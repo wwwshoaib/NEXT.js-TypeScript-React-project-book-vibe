@@ -12,6 +12,7 @@ interface NavItem {
 // Defined as a constant outside the component
 const NAV_ITEMS: readonly NavItem[] = [
   { label: 'Home', href: '/' },
+  { label: 'Books', href: '/all-books' },
   { label: 'Listed Books', href: '/listed-books' },
   { label: 'Pages to Read', href: '/read-books' },
 ] as const;

@@ -1,5 +1,6 @@
+import BookCard from "../components/BookCard";
 import { BookType } from "../type/BookType";
-import BookCard from "./BookCard";
+
 
 
 const getBooks = async () => {
@@ -22,14 +23,14 @@ const Books = async () => {
             {/* Section Title */}
             <div className="text-center mb-10">
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-serif">
-                    Books
+                    Explore all books
                 </h2>
             </div>
 
             {/* Grid Layout for Book Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
                 {
-                    booksData.slice(0,8).map((book: BookType, index: number) => (
+                    booksData.map((book: BookType, index: number) => (
                         <BookCard key={index} book={book} />
                     ))
                 }
