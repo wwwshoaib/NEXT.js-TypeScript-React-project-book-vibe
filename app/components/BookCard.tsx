@@ -75,7 +75,7 @@ export const BookCard = ({ book }: BookTypeProp) => {
 
         {/* View Details Button */}
         <Link
-          href={`/book/${bookId ?? '1'}`}
+          href={`/all-books/${book.bookId}`}
           className="w-full inline-flex items-center justify-center gap-2 bg-[#23BE0A] hover:bg-[#1fa909] active:scale-[0.98] text-white text-sm font-semibold py-2.5 px-4 rounded-xl shadow-sm transition-all duration-200"
         >
           <span>View Details</span>
